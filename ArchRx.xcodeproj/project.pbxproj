@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		118117812225B2C000E73FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118117802225B2C000E73FC2 /* AppDelegate.swift */; };
+		118117882225B2C100E73FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118117872225B2C100E73FC2 /* Assets.xcassets */; };
+		1181178B2225B2C100E73FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118117892225B2C100E73FC2 /* LaunchScreen.storyboard */; };
+		118117962225B2C100E73FC2 /* ArchRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118117952225B2C100E73FC2 /* ArchRxTests.swift */; };
+		119267002226F8EF00E21A46 /* GetFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119266FF2226F8EE00E21A46 /* GetFlights.swift */; };
+		119267102226F8FE00E21A46 /* APIFlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267032226F8FE00E21A46 /* APIFlightRepository.swift */; };
+		119267112226F8FE00E21A46 /* CarrierRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267052226F8FE00E21A46 /* CarrierRepresentation.swift */; };
+		119267122226F8FE00E21A46 /* FlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267062226F8FE00E21A46 /* FlightResponse.swift */; };
+		119267132226F8FE00E21A46 /* PlaceRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267072226F8FE00E21A46 /* PlaceRepresentation.swift */; };
+		119267142226F8FE00E21A46 /* ItineraryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267082226F8FE00E21A46 /* ItineraryRepresentation.swift */; };
+		119267152226F8FE00E21A46 /* PricingOptionsRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267092226F8FE00E21A46 /* PricingOptionsRepresentation.swift */; };
+		119267162226F8FE00E21A46 /* LegRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192670A2226F8FE00E21A46 /* LegRepresentation.swift */; };
+		119267172226F8FE00E21A46 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192670B2226F8FE00E21A46 /* SessionService.swift */; };
+		119267182226F8FE00E21A46 /* SchedulerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192670D2226F8FE00E21A46 /* SchedulerHelper.swift */; };
+		119267192226F8FE00E21A46 /* FlightsInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192670F2226F8FE00E21A46 /* FlightsInstance.swift */; };
+		119267212226F92A00E21A46 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192671B2226F92A00E21A46 /* Query.swift */; };
+		119267222226F92A00E21A46 /* FlightRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192671C2226F92A00E21A46 /* FlightRepositoryProtocol.swift */; };
+		119267232226F92A00E21A46 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192671E2226F92A00E21A46 /* Itinerary.swift */; };
+		119267242226F92A00E21A46 /* Carrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192671F2226F92A00E21A46 /* Carrier.swift */; };
+		119267252226F92A00E21A46 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267202226F92A00E21A46 /* Flight.swift */; };
+		119267362226F97300E21A46 /* FlightsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192672A2226F97300E21A46 /* FlightsPresenter.swift */; };
+		119267372226F97300E21A46 /* FlightsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192672B2226F97300E21A46 /* FlightsViewControllerProtocol.swift */; };
+		119267382226F97300E21A46 /* FlightListInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192672D2226F97300E21A46 /* FlightListInstance.swift */; };
+		1192673C2226F97300E21A46 /* FlightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119267342226F97300E21A46 /* FlightsViewController.xib */; };
+		1192673D2226F97300E21A46 /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267352226F97300E21A46 /* FlightsViewController.swift */; };
+		119267472227095C00E21A46 /* GetFlightTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267402227095C00E21A46 /* GetFlightTest.swift */; };
+		119267482227095C00E21A46 /* StubbedGetFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267412227095C00E21A46 /* StubbedGetFlights.swift */; };
+		119267492227095C00E21A46 /* StubbedFlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267422227095C00E21A46 /* StubbedFlightRepository.swift */; };
+		1192674A2227095C00E21A46 /* StubbedFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267452227095C00E21A46 /* StubbedFlightView.swift */; };
+		1192674B2227095C00E21A46 /* FlightsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119267462227095C00E21A46 /* FlightsPresenterTest.swift */; };
+		35E1F5C75C342AB87DA78512 /* Pods_ArchRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03B7FD5F3C3A7BE5F33D7B5 /* Pods_ArchRxTests.framework */; };
+		FB24505D8178A95A73AFD7DB /* Pods_ArchRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666176DAF109904F8C2A66E5 /* Pods_ArchRx.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118117922225B2C100E73FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118117752225B2C000E73FC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1181177C2225B2C000E73FC2;
+			remoteInfo = ArchRx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1181177D2225B2C000E73FC2 /* ArchRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		118117802225B2C000E73FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		118117872225B2C100E73FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1181178A2225B2C100E73FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1181178C2225B2C100E73FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118117912225B2C100E73FC2 /* ArchRxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchRxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		118117952225B2C100E73FC2 /* ArchRxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchRxTests.swift; sourceTree = "<group>"; };
+		118117972225B2C100E73FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119266FF2226F8EE00E21A46 /* GetFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlights.swift; sourceTree = "<group>"; };
+		119267032226F8FE00E21A46 /* APIFlightRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFlightRepository.swift; sourceTree = "<group>"; };
+		119267052226F8FE00E21A46 /* CarrierRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierRepresentation.swift; sourceTree = "<group>"; };
+		119267062226F8FE00E21A46 /* FlightResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightResponse.swift; sourceTree = "<group>"; };
+		119267072226F8FE00E21A46 /* PlaceRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRepresentation.swift; sourceTree = "<group>"; };
+		119267082226F8FE00E21A46 /* ItineraryRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryRepresentation.swift; sourceTree = "<group>"; };
+		119267092226F8FE00E21A46 /* PricingOptionsRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PricingOptionsRepresentation.swift; sourceTree = "<group>"; };
+		1192670A2226F8FE00E21A46 /* LegRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegRepresentation.swift; sourceTree = "<group>"; };
+		1192670B2226F8FE00E21A46 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		1192670D2226F8FE00E21A46 /* SchedulerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerHelper.swift; sourceTree = "<group>"; };
+		1192670F2226F8FE00E21A46 /* FlightsInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsInstance.swift; sourceTree = "<group>"; };
+		1192671B2226F92A00E21A46 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		1192671C2226F92A00E21A46 /* FlightRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRepositoryProtocol.swift; sourceTree = "<group>"; };
+		1192671E2226F92A00E21A46 /* Itinerary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
+		1192671F2226F92A00E21A46 /* Carrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carrier.swift; sourceTree = "<group>"; };
+		119267202226F92A00E21A46 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		1192672A2226F97300E21A46 /* FlightsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsPresenter.swift; sourceTree = "<group>"; };
+		1192672B2226F97300E21A46 /* FlightsViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		1192672D2226F97300E21A46 /* FlightListInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListInstance.swift; sourceTree = "<group>"; };
+		119267342226F97300E21A46 /* FlightsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightsViewController.xib; sourceTree = "<group>"; };
+		119267352226F97300E21A46 /* FlightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		119267402227095C00E21A46 /* GetFlightTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlightTest.swift; sourceTree = "<group>"; };
+		119267412227095C00E21A46 /* StubbedGetFlights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedGetFlights.swift; sourceTree = "<group>"; };
+		119267422227095C00E21A46 /* StubbedFlightRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedFlightRepository.swift; sourceTree = "<group>"; };
+		119267452227095C00E21A46 /* StubbedFlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedFlightView.swift; sourceTree = "<group>"; };
+		119267462227095C00E21A46 /* FlightsPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsPresenterTest.swift; sourceTree = "<group>"; };
+		174F0B022114BB1BE5AD0EC1 /* Pods-ArchRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchRxTests/Pods-ArchRxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		666176DAF109904F8C2A66E5 /* Pods_ArchRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC6F99F9462FDCBAEEB0C75 /* Pods-ArchRxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchRxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchRxTests/Pods-ArchRxTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6DE088CF556EC0AD0797B35 /* Pods-ArchRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchRx/Pods-ArchRx.debug.xcconfig"; sourceTree = "<group>"; };
+		E03B7FD5F3C3A7BE5F33D7B5 /* Pods_ArchRxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchRxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6271A41DBF99C3E0209AE8 /* Pods-ArchRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchRx/Pods-ArchRx.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1181177A2225B2C000E73FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB24505D8178A95A73AFD7DB /* Pods_ArchRx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181178E2225B2C100E73FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E1F5C75C342AB87DA78512 /* Pods_ArchRxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		118117742225B2C000E73FC2 = {
+			isa = PBXGroup;
+			children = (
+				1181177F2225B2C000E73FC2 /* ArchRX */,
+				118117942225B2C100E73FC2 /* ArchRxTests */,
+				1181177E2225B2C000E73FC2 /* Products */,
+				A6D8CA6ACAB75CEA89861D20 /* Pods */,
+				2034CA956C5CAA691BA661FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1181177E2225B2C000E73FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1181177D2225B2C000E73FC2 /* ArchRx.app */,
+				118117912225B2C100E73FC2 /* ArchRxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1181177F2225B2C000E73FC2 /* ArchRX */ = {
+			isa = PBXGroup;
+			children = (
+				119267272226F96400E21A46 /* Presentation */,
+				119267262226F95A00E21A46 /* Core */,
+				118117802225B2C000E73FC2 /* AppDelegate.swift */,
+				118117872225B2C100E73FC2 /* Assets.xcassets */,
+				118117892225B2C100E73FC2 /* LaunchScreen.storyboard */,
+				1181178C2225B2C100E73FC2 /* Info.plist */,
+			);
+			path = ArchRX;
+			sourceTree = "<group>";
+		};
+		118117942225B2C100E73FC2 /* ArchRxTests */ = {
+			isa = PBXGroup;
+			children = (
+				1192673E2227095C00E21A46 /* Core */,
+				119267432227095C00E21A46 /* Presentation */,
+				118117952225B2C100E73FC2 /* ArchRxTests.swift */,
+				118117972225B2C100E73FC2 /* Info.plist */,
+			);
+			path = ArchRxTests;
+			sourceTree = "<group>";
+		};
+		119266FC2226F89900E21A46 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				119266FF2226F8EE00E21A46 /* GetFlights.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		119266FD2226F8A600E21A46 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1192671D2226F92A00E21A46 /* Model */,
+				1192671A2226F92A00E21A46 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		119267012226F8FE00E21A46 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				119267022226F8FE00E21A46 /* Repository */,
+				1192670C2226F8FE00E21A46 /* Util */,
+				1192670E2226F8FE00E21A46 /* Instance */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		119267022226F8FE00E21A46 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				119267032226F8FE00E21A46 /* APIFlightRepository.swift */,
+				119267042226F8FE00E21A46 /* model */,
+				1192670B2226F8FE00E21A46 /* SessionService.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		119267042226F8FE00E21A46 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				119267052226F8FE00E21A46 /* CarrierRepresentation.swift */,
+				119267062226F8FE00E21A46 /* FlightResponse.swift */,
+				119267072226F8FE00E21A46 /* PlaceRepresentation.swift */,
+				119267082226F8FE00E21A46 /* ItineraryRepresentation.swift */,
+				119267092226F8FE00E21A46 /* PricingOptionsRepresentation.swift */,
+				1192670A2226F8FE00E21A46 /* LegRepresentation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1192670C2226F8FE00E21A46 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1192670D2226F8FE00E21A46 /* SchedulerHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1192670E2226F8FE00E21A46 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				1192670F2226F8FE00E21A46 /* FlightsInstance.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
+		1192671A2226F92A00E21A46 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1192671B2226F92A00E21A46 /* Query.swift */,
+				1192671C2226F92A00E21A46 /* FlightRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1192671D2226F92A00E21A46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1192671E2226F92A00E21A46 /* Itinerary.swift */,
+				1192671F2226F92A00E21A46 /* Carrier.swift */,
+				119267202226F92A00E21A46 /* Flight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		119267262226F95A00E21A46 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				119267012226F8FE00E21A46 /* Infrastructure */,
+				119266FD2226F8A600E21A46 /* Domain */,
+				119266FC2226F89900E21A46 /* Action */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		119267272226F96400E21A46 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				119267282226F97300E21A46 /* FlightList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		119267282226F97300E21A46 /* FlightList */ = {
+			isa = PBXGroup;
+			children = (
+				119267292226F97300E21A46 /* Presenter */,
+				1192672C2226F97300E21A46 /* Instance */,
+				1192672E2226F97300E21A46 /* View */,
+			);
+			path = FlightList;
+			sourceTree = "<group>";
+		};
+		119267292226F97300E21A46 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1192672A2226F97300E21A46 /* FlightsPresenter.swift */,
+				1192672B2226F97300E21A46 /* FlightsViewControllerProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1192672C2226F97300E21A46 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				1192672D2226F97300E21A46 /* FlightListInstance.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
+		1192672E2226F97300E21A46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				119267322226F97300E21A46 /* FlightsViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		119267322226F97300E21A46 /* FlightsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				119267342226F97300E21A46 /* FlightsViewController.xib */,
+				119267352226F97300E21A46 /* FlightsViewController.swift */,
+			);
+			path = FlightsViewController;
+			sourceTree = "<group>";
+		};
+		1192673E2227095C00E21A46 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1192673F2227095C00E21A46 /* Action */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1192673F2227095C00E21A46 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				119267402227095C00E21A46 /* GetFlightTest.swift */,
+				119267412227095C00E21A46 /* StubbedGetFlights.swift */,
+				119267422227095C00E21A46 /* StubbedFlightRepository.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		119267432227095C00E21A46 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				119267442227095C00E21A46 /* FlightsList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		119267442227095C00E21A46 /* FlightsList */ = {
+			isa = PBXGroup;
+			children = (
+				119267452227095C00E21A46 /* StubbedFlightView.swift */,
+				119267462227095C00E21A46 /* FlightsPresenterTest.swift */,
+			);
+			path = FlightsList;
+			sourceTree = "<group>";
+		};
+		2034CA956C5CAA691BA661FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666176DAF109904F8C2A66E5 /* Pods_ArchRx.framework */,
+				E03B7FD5F3C3A7BE5F33D7B5 /* Pods_ArchRxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D8CA6ACAB75CEA89861D20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6DE088CF556EC0AD0797B35 /* Pods-ArchRx.debug.xcconfig */,
+				FD6271A41DBF99C3E0209AE8 /* Pods-ArchRx.release.xcconfig */,
+				174F0B022114BB1BE5AD0EC1 /* Pods-ArchRxTests.debug.xcconfig */,
+				6FC6F99F9462FDCBAEEB0C75 /* Pods-ArchRxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1181177C2225B2C000E73FC2 /* ArchRx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1181179A2225B2C100E73FC2 /* Build configuration list for PBXNativeTarget "ArchRx" */;
+			buildPhases = (
+				A2C2DC8EB787995C9E4F618E /* [CP] Check Pods Manifest.lock */,
+				118117792225B2C000E73FC2 /* Sources */,
+				1181177A2225B2C000E73FC2 /* Frameworks */,
+				1181177B2225B2C000E73FC2 /* Resources */,
+				8CD5DED10843E05219BC4E11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchRx;
+			productName = ArchRx;
+			productReference = 1181177D2225B2C000E73FC2 /* ArchRx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		118117902225B2C100E73FC2 /* ArchRxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1181179D2225B2C100E73FC2 /* Build configuration list for PBXNativeTarget "ArchRxTests" */;
+			buildPhases = (
+				B766DD61572693EB1EF6B8B6 /* [CP] Check Pods Manifest.lock */,
+				1181178D2225B2C100E73FC2 /* Sources */,
+				1181178E2225B2C100E73FC2 /* Frameworks */,
+				1181178F2225B2C100E73FC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118117932225B2C100E73FC2 /* PBXTargetDependency */,
+			);
+			name = ArchRxTests;
+			productName = ArchRxTests;
+			productReference = 118117912225B2C100E73FC2 /* ArchRxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		118117752225B2C000E73FC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Juan Felippo";
+				TargetAttributes = {
+					1181177C2225B2C000E73FC2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					118117902225B2C100E73FC2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1181177C2225B2C000E73FC2;
+					};
+				};
+			};
+			buildConfigurationList = 118117782225B2C000E73FC2 /* Build configuration list for PBXProject "ArchRx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 118117742225B2C000E73FC2;
+			productRefGroup = 1181177E2225B2C000E73FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1181177C2225B2C000E73FC2 /* ArchRx */,
+				118117902225B2C100E73FC2 /* ArchRxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1181177B2225B2C000E73FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1181178B2225B2C100E73FC2 /* LaunchScreen.storyboard in Resources */,
+				118117882225B2C100E73FC2 /* Assets.xcassets in Resources */,
+				1192673C2226F97300E21A46 /* FlightsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181178F2225B2C100E73FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CD5DED10843E05219BC4E11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArchRx/Pods-ArchRx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArchRx/Pods-ArchRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C2DC8EB787995C9E4F618E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArchRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B766DD61572693EB1EF6B8B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArchRxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118117792225B2C000E73FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119267242226F92A00E21A46 /* Carrier.swift in Sources */,
+				119267122226F8FE00E21A46 /* FlightResponse.swift in Sources */,
+				119267362226F97300E21A46 /* FlightsPresenter.swift in Sources */,
+				119267232226F92A00E21A46 /* Itinerary.swift in Sources */,
+				119267102226F8FE00E21A46 /* APIFlightRepository.swift in Sources */,
+				119267192226F8FE00E21A46 /* FlightsInstance.swift in Sources */,
+				1192673D2226F97300E21A46 /* FlightsViewController.swift in Sources */,
+				119267222226F92A00E21A46 /* FlightRepositoryProtocol.swift in Sources */,
+				119267142226F8FE00E21A46 /* ItineraryRepresentation.swift in Sources */,
+				119267152226F8FE00E21A46 /* PricingOptionsRepresentation.swift in Sources */,
+				119267002226F8EF00E21A46 /* GetFlights.swift in Sources */,
+				119267252226F92A00E21A46 /* Flight.swift in Sources */,
+				119267382226F97300E21A46 /* FlightListInstance.swift in Sources */,
+				119267372226F97300E21A46 /* FlightsViewControllerProtocol.swift in Sources */,
+				119267172226F8FE00E21A46 /* SessionService.swift in Sources */,
+				119267212226F92A00E21A46 /* Query.swift in Sources */,
+				119267112226F8FE00E21A46 /* CarrierRepresentation.swift in Sources */,
+				118117812225B2C000E73FC2 /* AppDelegate.swift in Sources */,
+				119267132226F8FE00E21A46 /* PlaceRepresentation.swift in Sources */,
+				119267162226F8FE00E21A46 /* LegRepresentation.swift in Sources */,
+				119267182226F8FE00E21A46 /* SchedulerHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181178D2225B2C100E73FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1192674B2227095C00E21A46 /* FlightsPresenterTest.swift in Sources */,
+				119267472227095C00E21A46 /* GetFlightTest.swift in Sources */,
+				118117962225B2C100E73FC2 /* ArchRxTests.swift in Sources */,
+				119267482227095C00E21A46 /* StubbedGetFlights.swift in Sources */,
+				119267492227095C00E21A46 /* StubbedFlightRepository.swift in Sources */,
+				1192674A2227095C00E21A46 /* StubbedFlightView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118117932225B2C100E73FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1181177C2225B2C000E73FC2 /* ArchRx */;
+			targetProxy = 118117922225B2C100E73FC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118117892225B2C100E73FC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1181178A2225B2C100E73FC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		118117982225B2C100E73FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		118117992225B2C100E73FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1181179B2225B2C100E73FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE088CF556EC0AD0797B35 /* Pods-ArchRx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArchRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intros.ArchRx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1181179C2225B2C100E73FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6271A41DBF99C3E0209AE8 /* Pods-ArchRx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArchRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intros.ArchRx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1181179E2225B2C100E73FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174F0B022114BB1BE5AD0EC1 /* Pods-ArchRxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArchRxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intros.ArchRxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchRx.app/ArchRx";
+			};
+			name = Debug;
+		};
+		1181179F2225B2C100E73FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC6F99F9462FDCBAEEB0C75 /* Pods-ArchRxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArchRxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intros.ArchRxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchRx.app/ArchRx";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118117782225B2C000E73FC2 /* Build configuration list for PBXProject "ArchRx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118117982225B2C100E73FC2 /* Debug */,
+				118117992225B2C100E73FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1181179A2225B2C100E73FC2 /* Build configuration list for PBXNativeTarget "ArchRx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181179B2225B2C100E73FC2 /* Debug */,
+				1181179C2225B2C100E73FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1181179D2225B2C100E73FC2 /* Build configuration list for PBXNativeTarget "ArchRxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181179E2225B2C100E73FC2 /* Debug */,
+				1181179F2225B2C100E73FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 118117752225B2C000E73FC2 /* Project object */;
+}
